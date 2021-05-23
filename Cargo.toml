@@ -1,0 +1,16 @@
+[package]
+name = "set-proc-affinity"
+version = "0.1.0"
+authors = ["Cecile Tonglet <cecile.tonglet@cecton.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+structopt = "0.3"
+windows = "0.10"
+bindings = { path = "bindings" }
+
+[workspace]
+members = ["bindings"]

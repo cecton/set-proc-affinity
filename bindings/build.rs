@@ -1,0 +1,21 @@
+fn main() {
+    windows::build!(
+        Windows::Win32::System::Diagnostics::Debug::{
+            GetLastError,
+        },
+        Windows::Win32::System::Threading::{
+            CreateProcessW,
+            GetCurrentProcess,
+            STARTUPINFOW,
+            PROCESS_INFORMATION,
+            WaitForSingleObject,
+        },
+        Windows::Win32::System::SystemServices::{
+            PWSTR,
+            SetProcessAffinityMask,
+        },
+        Windows::Win32::System::WindowsProgramming::{
+            INFINITE,
+        },
+    );
+}
